@@ -1,0 +1,8 @@
+#!/Users/ranjan/pythonCodes/fun_with_python/text_to_speech_convertor/venv/bin/python3.9
+# -*- coding: utf-8 -*-
+import re
+import sys
+from gtts.cli import tts_cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(tts_cli())
